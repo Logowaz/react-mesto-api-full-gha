@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 // const bodyParser = require('body-parser');
 const errorHandler = require('./middlewares/errorHandler');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 const { PORT, MONGO_DB } = require('./utils/config');
 // const { PORT = 3000 } = process.env;
 const app = express();
@@ -15,6 +16,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(MONGO_DB);
+
+app.use(requestLogger);
 
 // app.use(bodyParser.json());
 app.use(cookieParser());
@@ -27,6 +30,7 @@ const router = require('./routes');
 
 app.use(router);
 
+app.use(errorLogger);
 app.use(errors());
 app.use(errorHandler);
 
