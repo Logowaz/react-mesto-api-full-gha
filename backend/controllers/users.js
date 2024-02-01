@@ -59,7 +59,7 @@ const login = (req, res, next) => {
       bcrypt.compare(String(password), user.password)
         .then((isValidUser) => {
           if (isValidUser) {
-            const jwt = jsonWebToken.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'secret_key', { expiresIn: '10d' });
+            const jwt = jsonWebToken.sign({ _id: user._id }, 'secret_key', { expiresIn: '10d' });
             // res.cookie('jwt', jwt, {
             //   maxAge: 2629440000,
             //   httpOnly: true,
