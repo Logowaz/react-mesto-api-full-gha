@@ -37,7 +37,7 @@ export const validationConf = {
 export const configApi = { 
   // url: 'https://mesto.nomoreparties.co/v1/cohort-73/', 
   // url: 'http://localhost:3000', 
-  url: 'https://http://logowaz25back.nomoredomainsmonster.ru', 
+  url: 'http://http://logowaz25back.nomoredomainsmonster.ru', 
   headers: { 
   authorization: `Bearer ${localStorage.getItem('jwt')}`, 
   "Content-Type": "application/json" 
