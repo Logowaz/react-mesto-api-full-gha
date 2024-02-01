@@ -22,7 +22,8 @@ app.use(requestLogger);
 // app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001', 'https://localhost:3000', 'https://localhost:3001', 'http://localhost:5173', 'https://localhost:5173'],
+  origin: ['http://localhost:3000', 'http://localhost:3001', 'https://localhost:3000', 'https://localhost:3001', 'http://localhost:5173', 'https://localhost:5173', 'https://logowaz25.nomoredomainsmonster.ru', 'http://logowaz25.nomoredomainsmonster.ru',
+    'http://logowaz25back.nomoredomainsmonster.ru', 'https://logowaz25back.nomoredomainsmonster.ru'],
   credentials: true,
 }));
 
