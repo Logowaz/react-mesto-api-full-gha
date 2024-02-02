@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.136.34
+IP 158.160.136.34
 
 Frontend https://logowaz25.nomoredomainsmonster.ru
 
