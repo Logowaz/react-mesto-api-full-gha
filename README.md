@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 158.160.136.34
 
-Frontend https://...
+Frontend https://logowaz25.nomoredomainsmonster.ru
 
-Backend https://...
+Backend https://logowaz25back.nomoredomainsmonster.ru
